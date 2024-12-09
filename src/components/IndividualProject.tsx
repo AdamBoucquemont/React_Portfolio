@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Chip from '@mui/material/Chip';
-import '../assets/styles/IndividualProject.scss';
 import DetailsProject from './DetailsProject';
 
 type IndividualProjectProps = {

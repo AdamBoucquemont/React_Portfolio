@@ -1,5 +1,4 @@
 import React from "react"
-import '../assets/styles/DetailsProject.scss';
 
 type IndividualProjectProps = {
     image: string;
