@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import { useSelectedChips } from "../context/GlobalContext";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faDocker, faJava } from '@fortawesome/free-brands-svg-icons';
@@ -42,6 +43,26 @@ const labelsFourth = [
 ];
 
 function Expertise() {
+    const { selectedChips, setSelectedChips } = useSelectedChips();
+
+    const handleChipClick = (label: string) => {
+        setSelectedChips((prevSelected) =>
+            prevSelected.includes(label)
+                ? prevSelected.filter((chip) => chip !== label) // Remove if already selected
+                : [...prevSelected, label] // Add if not selected
+        );
+    };
+
+    const renderChips = (labels: string[]) =>
+        labels.map((label, index) => (
+            <Chip
+                key={index}
+                className={`chip ${selectedChips.includes(label) ? "selected" : ""}`}
+                label={label}
+                onClick={() => handleChipClick(label)}
+            />
+        ));
+
     return (
         <div className="container" id="expertise">
             <div className="skills-container">
@@ -53,9 +74,7 @@ function Expertise() {
                         <p>Expertise dans le développement d’applications web modernes, de la conception UI/UX à l’implémentation frontend et backend.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
-                            {labelsFirst.map((label, index) => (
-                                <Chip key={index} className='chip' label={label} />
-                            ))}
+                            {renderChips(labelsFirst)}
                         </div>
                     </div>
 
@@ -65,9 +84,7 @@ function Expertise() {
                         <p>Compétences en gestion, analyse et visualisation des données, avec une spécialisation en intelligence artificielle et traitement du langage.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
-                            {labelsSecond.map((label, index) => (
-                                <Chip key={index} className='chip' label={label} />
-                            ))}
+                            {renderChips(labelsSecond)}
                         </div>
                     </div>
 
@@ -77,9 +94,7 @@ function Expertise() {
                         <p>Expérience dans divers langages adaptés aux besoins spécifiques, des systèmes embarqués aux applications robustes.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
-                            {labelsThird.map((label, index) => (
-                                <Chip key={index} className='chip' label={label} />
-                            ))}
+                            {renderChips(labelsThird)}
                         </div>
                     </div>
 
@@ -89,9 +104,7 @@ function Expertise() {
                         <p>Maîtrise des outils et méthodes agiles pour organiser, collaborer et déployer efficacement des projets.</p>
                         <div className="flex-chips">
                             <span className="chip-title">Tech stack:</span>
-                            {labelsFourth.map((label, index) => (
-                                <Chip key={index} className='chip' label={label} />
-                            ))}
+                            {renderChips(labelsFourth)}
                         </div>
                     </div>
                 </div>
