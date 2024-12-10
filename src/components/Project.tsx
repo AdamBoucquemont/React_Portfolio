@@ -173,7 +173,7 @@ function Project() {
                 <p className="number-visible-project" >Aucun projet ne correspond aux filtres sélectionnés. Veuillez chnger les filtres séléctionnés. </p>
             ) : (
                 <>
-                    <p className="number-visible-project"> {selectedChips.length} projets sont visibles sur les {allProjects.length}. </p>
+                    <p className="number-visible-project"> {filteredProjects.length} projets sont visibles sur les {allProjects.length}. </p>
                     <div className="projects-grid">
                         {filteredProjects.map((project, index) => (
                             <IndividualProject
