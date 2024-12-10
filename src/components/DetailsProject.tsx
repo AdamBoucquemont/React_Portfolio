@@ -18,12 +18,14 @@ function DetailsProject({ image, title, url, resume, contexte, etapes, additiona
                 &times;
             </button>
             <h2>{title}</h2>
-            <img src={image} alt="thumbnail" className="details-image" />
-            {url ?
-                <p> Vous pouvez retrouver le code de ce projet <a href={url} target="_blank" rel="noreferrer">ici</a>. </p>
-                :
-                <p> Impossible d'accéder à ce projet</p>
-            }
+            <div className="center-part">
+                <img src={image} alt="thumbnail" className="details-image" />
+                {url ?
+                    <p> Vous pouvez retrouver le code de ce projet <a href={url} target="_blank" rel="noreferrer">ici</a>. </p>
+                    :
+                    <p> Impossible d'accéder à ce projet</p>
+                }
+            </div>
             <h3> Résumé </h3>
             <p> {resume} </p>
             <h3> Contexte </h3>
