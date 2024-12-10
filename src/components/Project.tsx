@@ -166,7 +166,7 @@ function Project() {
 
     return (
         <div className="projects-container" id="projects">
-            <h1>Personal Projects</h1>
+            <h1> Projets réalisés </h1>
             <FilterMenu onFilter={handleFilter} />
 
             {filteredProjects.length === 0 ? (
