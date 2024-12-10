@@ -1,0 +1,27 @@
+.filter-dialog .MuiPaper-root {
+    background-color: #d32f2f;
+    color: white;
+}
+
+/* Checkbox blanche */
+.filter-checkbox-group .MuiCheckbox-root {
+    color: white;
+}
+
+.filter-checkbox-group .MuiCheckbox-root.Mui-checked {
+    color: white;
+}
+
+.filter-dialog-actions button {
+    margin: 5px;
+}
+
+.reset-button {
+    color: #fff;
+    border-color: #fff;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.reset-button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
