@@ -74,7 +74,7 @@ function FilterMenu({ onFilter }: { onFilter: (selected: string[]) => void }) {
                                         <Checkbox
                                             checked={selectedChips.includes(label)}
                                             onChange={() => handleToggle(label)}
-                                            color="default" // Checkbox en blanc pour s'adapter au fond rouge
+                                            color="default"
                                         />
                                     }
                                     label={label}

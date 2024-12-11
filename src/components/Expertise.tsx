@@ -48,8 +48,8 @@ function Expertise() {
     const handleChipClick = (label: string) => {
         setSelectedChips((prevSelected) =>
             prevSelected.includes(label)
-                ? prevSelected.filter((chip) => chip !== label) // Remove if already selected
-                : [...prevSelected, label] // Add if not selected
+                ? prevSelected.filter((chip) => chip !== label)
+                : [...prevSelected, label]
         );
     };
 

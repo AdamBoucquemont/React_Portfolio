@@ -10,7 +10,6 @@ function Main() {
     <div className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          {/* <img src="https://my-aws-assets.s3.us-west-2.amazonaws.com/portfolio-img/avatar_circle.jpeg" alt="Avatar" /> */}
           <img src={picture} alt="Avatar" />
         </div>
         <div className="content">
