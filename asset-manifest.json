@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/React_Portoflio/static/css/main.d1153210.css",
+    "main.js": "/React_Portoflio/static/js/main.1904ae5a.js",
+    "static/js/453.b05d8aa5.chunk.js": "/React_Portoflio/static/js/453.b05d8aa5.chunk.js",
+    "static/media/Photo profil.jpg": "/React_Portoflio/static/media/Photo profil.6e4f1754470cd1a7e86e.jpg",
+    "static/media/Galactik Football.png": "/React_Portoflio/static/media/Galactik Football.b3fcb7046a216d6b841e.png",
+    "static/media/Warr'UTT.png": "/React_Portoflio/static/media/Warr'UTT.046f667733185e2d87bd.png",
+    "static/media/bg-light.png": "/React_Portoflio/static/media/bg-light.bac0efb485244a522981.png",
+    "static/media/Photimal.png": "/React_Portoflio/static/media/Photimal.697ec7ebd4df055be997.png",
+    "static/media/bg-dark.png": "/React_Portoflio/static/media/bg-dark.f420c6b8458af72de935.png",
+    "static/media/simulation_hopital.png": "/React_Portoflio/static/media/simulation_hopital.905fa9f410473fdbdcfd.png",
+    "static/media/ProxySanté.png": "/React_Portoflio/static/media/ProxySanté.6ec9e0d7333ebfc717b2.png",
+    "static/media/Aubay.png": "/React_Portoflio/static/media/Aubay.1a831baf68b365259e14.png",
+    "static/media/Grytics.png": "/React_Portoflio/static/media/Grytics.a47d9fdeffca50a7237a.png",
+    "static/media/No_image_available.png": "/React_Portoflio/static/media/No_image_available.7266af89b85529c42955.png",
+    "static/media/CILLA.png": "/React_Portoflio/static/media/CILLA.6e47148076590097e5d6.png",
+    "static/media/witch_hunt_carte.jpg": "/React_Portoflio/static/media/witch_hunt_carte.69f5e038d5638d6a19e9.jpg",
+    "static/media/mvc.png": "/React_Portoflio/static/media/mvc.6414e9424d1702b3e23f.png",
+    "index.html": "/React_Portoflio/index.html",
+    "main.d1153210.css.map": "/React_Portoflio/static/css/main.d1153210.css.map",
+    "main.1904ae5a.js.map": "/React_Portoflio/static/js/main.1904ae5a.js.map",
+    "453.b05d8aa5.chunk.js.map": "/React_Portoflio/static/js/453.b05d8aa5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d1153210.css",
+    "static/js/main.1904ae5a.js"
+  ]
+}
