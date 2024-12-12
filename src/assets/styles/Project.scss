@@ -4,30 +4,135 @@
     padding: 5% 10%;
     text-align: left;
 }
-  
+
 .projects-container .projects-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
+    justify-content: center;
+    align-items: start;
 }
-  
+
 .projects-container .projects-grid .project {
     text-align: left;
 }
-  
+
+.projects-container .projects-grid .project {
+    display: grid;
+    place-items: center;
+}
+
+.image-container {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+}
+
+.image-container img {
+    max-height: 300px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
 .project h2:hover {
     text-decoration: underline;
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
 }
-  
+
 .zoom {
     border-radius: 5px;
     transition: transform .2s;
     margin: 0 auto;
 }
-  
+
 .zoom:hover {
     transform: scale(1.05);
+}
+
+.project {
+
+    &.details-mode {
+        position: fixed;
+        top: 20%;
+        left: 10%;
+        width: 80%;
+        height: 70%;
+        z-index: 1000;
+        box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
+        overflow-y: auto;
+        border-radius: 8px;
+    }
+
+}
+
+.labels-overlay {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.labels-overlay .chip {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.number-visible-project {
+    text-align: center;
+}
+
+.details-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #12171D;
+}
+
+.details-container h2,
+h3,
+img {
+    text-align: center;
+}
+
+.details-image {
+    width: 40%;
+    text-align: center;
+}
+
+.center-part {
+    text-align: center;
+
+    img {
+        max-height: 300px;
+        width: auto;
+    }
+}
+
+
+.close-button {
+    position: sticky;
+    text-align: end;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+        color: #ff0000;
+    }
+
+    &:focus {
+        outline: none;
+        box-shadow: 0 0 5px rgba(255, 0, 0, 0.6);
+    }
 }
 
 @media screen {
@@ -37,11 +142,11 @@
             padding-left: 5%;
             padding-right: 5%;
         }
-  
+
         .projects-container .projects-grid {
             display: block;
         }
-      
+
         .projects-container .projects-grid .project {
             padding-bottom: 5%;
         }
