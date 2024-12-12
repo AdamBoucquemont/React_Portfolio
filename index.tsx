@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.scss';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { SelectedChipsProvider } from './context/GlobalContext';
+import App from './src/App';
+import reportWebVitals from './src/reportWebVitals';
+import { SelectedChipsProvider } from './src/context/GlobalContext';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
