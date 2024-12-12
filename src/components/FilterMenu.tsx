@@ -57,15 +57,15 @@ function FilterMenu({ onFilter }: { onFilter: (selected: string[]) => void }) {
                 fullWidth
                 PaperProps={{
                     style: {
-                        backgroundColor: "#12171D",
-                        color: "white",
+                        backgroundColor: document.querySelector('.main-container.light-mode') ? "#EDEDED" : "#12171D",
+                        color: document.querySelector('.main-container.light-mode') ? "black" : "white",
                         borderRadius: "8px",
                     },
                 }}
             >
-                <DialogTitle>Filtres</DialogTitle>
+                <DialogTitle className={`${document.querySelector('.main-container.light-mode') ? 'title-light' : 'title-dark'}`}>Filtres</DialogTitle>
                 <DialogContent>
-                    <FormControl component="fieldset" className="filter-checkbox-group">
+                    <FormControl component="fieldset" className={`${document.querySelector('.main-container.light-mode') ? 'filter-checkbox-group-light' : 'filter-checkbox-group-dark'}`}>
                         <FormGroup>
                             {allLabels.map((label, index) => (
                                 <FormControlLabel

@@ -1,18 +1,42 @@
 .filter-dialog .MuiPaper-root {
-    background-color: #d32f2f;
     color: white;
 }
 
-.filter-checkbox-group .MuiCheckbox-root {
+.filter-checkbox-group-dark .MuiCheckbox-root {
     color: white;
 }
 
-.filter-checkbox-group .MuiCheckbox-root.Mui-checked {
+.filter-checkbox-group-dark .MuiCheckbox-root.Mui-checked {
     color: white;
+}
+
+.filter-checkbox-group-dark span,
+input {
+    color: white;
+}
+
+.filter-checkbox-group-light .MuiCheckbox-root {
+    color: black;
+}
+
+.filter-checkbox-group-light .MuiCheckbox-root.Mui-checked {
+    color: black;
+}
+
+.filter-checkbox-group-light .MuiFormControlLabel-root {
+    color: black;
 }
 
 .filter-dialog-actions button {
     margin: 5px;
+}
+
+.title-light {
+    color: black;
+}
+
+.title-dark {
+    color: white;
 }
 
 .reset-button {
